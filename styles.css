@@ -22,12 +22,13 @@ h1 {
 h2 {
     font-size: 46px;
     line-height: 54px;
-    color: #222;
+
 }
 
 h4 {
     font-size: 20px;
-    color: #222;
+
+
 }
 
 h6 {
@@ -36,8 +37,8 @@ h6 {
 }
 
 p {
+
     font-size: 16px;
-    color: #465b52;
     margin: 15px 0 20px 0;
 }
 
@@ -60,7 +61,20 @@ body {
     background-color: #eae2b7;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 20px 80px;
+    height: 18vh;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
 }
+
+#header a img {
+    width: 100%;
+
+}
+
 
 #nav {
     display: flex;
@@ -103,16 +117,18 @@ body {
     justify-content: center;
     width: 100%;
     height: 90vh;
+    color: #eae2b7;
+
 }
 
 #hero h4 {
     padding-bottom: 10px;
+
 }
 
 #hero h1 {
     color: #d62828;
 }
-
 
 
 #hero button {
@@ -143,4 +159,128 @@ body {
     #hero button {
         padding: 0.25em 0.75em;
     }
+}
+
+#sell-trade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 200px;
+
+}
+
+#sell-trade .st-box {
+    height: 300px;
+    max-height: 300px;
+    width: 200px;
+    min-width: 172px;
+    text-align: center;
+    padding: 25px 15px;
+    margin: 15px 0;
+    border: 2px solid #eae2b7;
+    border-radius: 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+    background-color: #EE443C;
+
+}
+
+
+#sell-trade .st-box img {
+    width: 100%;
+}
+
+#sell-trade .st-box h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    color: #FEB52D;
+    background-color: #1B2C36;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#sell-trade .st-box:nth-child(2) h6 {
+    margin-top: 50px;
+}
+
+#sell-trade .st-box:nth-child(4) h6 {
+    margin-top: 35px;
+}
+
+.icon-svgs {
+    filter: invert(85%) sepia(25%) saturate(3676%) hue-rotate(335deg) brightness(103%) contrast(99%);
+}
+
+#deals {
+    text-align: center;
+}
+
+#deals .deals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#deals .deal {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    margin: 15px 0;
+    border: 2px solid #eae2b7;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+#deals .deal:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+#deals .deal img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#deals .deal .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#deals .deal .description span {
+    color: #EE443C;
+}
+
+
+#deals .deal .description h5 {
+    padding-top: 7px;
+    color: #003049;
+    font-size: 14px;
+}
+
+#deals .deal .description i {
+    font-size: 12px;
+    color: #FEB52D;
+}
+
+#deals .deal .description h4 {
+    padding-top: 6px;
+    font-size: 16px;
+    color: #003049;
+
+}
+
+#deals .deal .cart-icon {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #EE443C;
+    border: 1px solid #FEB52D;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
 }
