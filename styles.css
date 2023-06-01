@@ -16,7 +16,6 @@ html {
 h1 {
     font-size: 50px;
     line-height: 64px;
-    color: #222;
 }
 
 h2 {
@@ -42,11 +41,11 @@ p {
     margin: 15px 0 20px 0;
 }
 
-.section-p1 {
+.p1 {
     padding: 40px 80px;
 }
 
-.section-m1 {
+.m1 {
     margin: 40px 0;
 }
 
@@ -306,4 +305,154 @@ button:active {
 
 #banner button {
     margin-top: 14px;
+}
+
+#small-ban {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+#small-ban .banner-box {
+    width: 50%;
+    min-width: 580px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-image: url(img/bannerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+#tri-ban {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+#tri-ban .banner-box {
+    width: 30%;
+    min-width: 30px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-image: url(img/bannerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+#news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("img/newbg.jpeg");
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    background-color: #0B122F;
+    color: #EE443C;
+}
+
+#news .new-text {
+    padding-left: 80px;
+    padding-top: 10px;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 600;
+    color: #eae2b7;
+    ;
+}
+
+#news .new-text h4 {
+    font-size: 28px;
+}
+
+#news .new-text p {
+    font-size: 24px;
+}
+
+#news p span {
+    color: #FEB52D;
+}
+
+#news .form {
+    display: flex;
+    width: 40%;
+    padding: 5px;
+}
+
+#news input {
+    height: 3rem;
+    padding: 0 2.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
+
+footer .logo-sm {
+    margin-bottom: 20px;
+}
+
+
+footer h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0 0 6px 0;
+}
+
+footer a {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #003049;
+}
+
+footer .socials {
+    margin-top: 20px;
+
+}
+
+footer .socials i {
+    color: #EE443C;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .app img {
+    margin: 10px 0 15px 0;
+}
+
+footer .app .row img {
+    width: 2em;
 }
