@@ -51,6 +51,7 @@ p {
 
 body {
     width: 100%;
+    background-color: #004b23;
 }
 
 button {
@@ -135,6 +136,15 @@ button:active {
     font-size: 21px;
 }
 
+#hamburger {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 #hero {
     background-image: url("img/background.jpg");
     background-position: top 35% right 0;
@@ -170,23 +180,23 @@ button:active {
 }
 
 #sell-trade .st-box {
-    height: 300px;
-    max-height: 300px;
+    height: 275px;
     width: 200px;
     min-width: 172px;
     text-align: center;
-    padding: 25px 15px;
+    padding: 15px 15px;
     margin: 15px 0;
     border: 2px solid #eae2b7;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
     background-color: #EE443C;
+    position: relative;
 
 }
 
 
 #sell-trade .st-box img {
-    width: 100%;
+    width: 80%;
 }
 
 #sell-trade .st-box h6 {
@@ -196,15 +206,20 @@ button:active {
     background-color: #1B2C36;
     border-radius: 4px;
     margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    width: 75%;
+
 }
 
-#sell-trade .st-box:nth-child(2) h6 {
+/* #sell-trade .st-box:nth-child(2) h6 {
     margin-top: 50px;
 }
 
 #sell-trade .st-box:nth-child(4) h6 {
     margin-top: 35px;
-}
+} */
 
 .icon-svgs {
     filter: invert(85%) sepia(25%) saturate(3676%) hue-rotate(335deg) brightness(103%) contrast(99%);
@@ -226,6 +241,7 @@ button:active {
     min-width: 250px;
     padding: 10px 12px;
     margin: 15px 0;
+    background-color: #FFF;
     border: 2px solid #eae2b7;
     border-radius: 25px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
@@ -250,6 +266,10 @@ button:active {
 
 #deals .deal .description span {
     color: #EE443C;
+}
+
+#deals p {
+    color: #eae2b7;
 }
 
 
@@ -315,7 +335,7 @@ button:active {
 }
 
 #small-ban .banner-box {
-    width: 50%;
+    width: 48%;
     min-width: 580px;
     height: 50vh;
     display: flex;
@@ -323,10 +343,26 @@ button:active {
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    background-image: url(img/bannerbg.jpg);
+    background-image: url(img/ps1-console.jpg);
     background-position: center;
     background-size: cover;
     padding: 20px;
+}
+
+#small-ban.banner-box,
+h4,
+h2 {
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+    color: #eae2b7;
+}
+
+#small-ban .b-2 {
+    background-image: url(img/snes-control.jpg);
+}
+
+#small-ban button {
+    margin-top: 70px;
 }
 
 #tri-ban {
@@ -334,6 +370,10 @@ button:active {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 80px;
+    color: #eae2b7;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 #tri-ban .banner-box {
@@ -353,6 +393,18 @@ button:active {
 
 }
 
+#tri-ban .tri-1 {
+    background-image: url(img/nintendo.jpg);
+}
+
+#tri-ban .tri-2 {
+    background-image: url(img/sony.jpg);
+}
+
+#tri-ban .tri-3 {
+    background-image: url(img/sega.jpg);
+}
+
 #news {
     display: flex;
     flex-wrap: wrap;
@@ -366,6 +418,7 @@ button:active {
 }
 
 #news .new-text {
+    width: 60%;
     padding-left: 80px;
     padding-top: 10px;
     -webkit-text-stroke: 1px #000;
@@ -422,20 +475,26 @@ footer .logo-sm {
 
 
 footer h4 {
-    font-size: 16px;
+    font-size: 24px;
     padding-bottom: 10px;
 }
 
 footer p {
     font-size: 12px;
     margin: 0 0 6px 0;
+    color: #FFF;
+}
+
+footer span {
+    color: #eae2b7;
+    font-weight: 600;
 }
 
 footer a {
     font-size: 12px;
     margin-bottom: 10px;
     text-decoration: none;
-    color: #003049;
+    color: #FEB52D;
 }
 
 footer .socials {
@@ -451,8 +510,212 @@ footer .socials i {
 
 footer .app img {
     margin: 10px 0 15px 0;
+    color: #FEB52D;
 }
 
 footer .app .row img {
     width: 2em;
+}
+
+@media (max-width: 1320px) {
+    #small-ban .banner-box {
+        height: 50vh;
+        min-width: 100%;
+    }
+
+    #small-ban .b-2 {
+        margin-top: 20px;
+    }
+
+    #tri-ban .banner-box h2 {
+        font-size: 24px;
+    }
+
+
+
+}
+
+
+@media (max-width: 800px) {
+    #nav {
+        font-size: 16px;
+        background-color: #eae2b7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        padding-top: 50px;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        transition: 0.3s;
+    }
+
+    #nav.active {
+        right: -100px;
+    }
+
+    #nav li {
+        margin-bottom: 20px;
+    }
+
+    #hamburger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #hamburger i {
+        color: #003049;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        color: #0B122F;
+    }
+
+    #shop-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #sell-trade {
+        justify-content: center;
+
+    }
+
+    #sell-trade .st-box {
+        margin: 15px 15px;
+        height: 200px;
+    }
+
+
+    #deals .deals-container {
+        justify-content: center;
+    }
+
+    #deals .deal {
+        margin: 15px 15px;
+    }
+
+    #small-ban {
+        padding: 20px 10px;
+        margin-bottom: 20px;
+    }
+
+    #small-ban .banner-box {
+        height: 50vh;
+        min-width: 100%;
+    }
+
+    #small-ban .b-2 {
+        margin-top: 20px;
+    }
+
+    #small-ban .banner-box h2 {
+        font-size: 28px;
+    }
+
+    #tri-ban {
+        padding: 0 40px;
+    }
+
+    #tri-ban .banner-box {
+        width: 30%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #news {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #news .new-text {
+        padding: 0;
+    }
+
+    #news .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        padding: 0 20px;
+    }
+
+    #sell-trade .st-box {
+        width: 155px;
+        height: 155px;
+        margin: 0 0 15px 0;
+        position: relative;
+    }
+
+    #sell-trade .st-box img {
+        width: 4.5em;
+
+    }
+
+    #sell-trade .st-box h6 {
+        position: absolute;
+        bottom: 10px;
+        left: 22px;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+
+    #small-ban {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    #tri-ban {
+        padding: 0 20px;
+    }
+
+    #tri-ban .banner-box {
+        width: 100%;
+    }
+
+    #news .form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
